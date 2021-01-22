@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'alpine-nghttp2/**'
+      - '.github/workflows/alpine-nghttp2-build.yml'
   workflow_dispatch:
 
 env:
