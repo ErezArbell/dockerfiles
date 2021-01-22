@@ -1,4 +1,4 @@
-name: build-push-docker
+name: alpine-nghttp2-build-push-docker
 
 on:
   push:
