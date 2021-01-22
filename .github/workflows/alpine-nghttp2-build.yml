@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: alpine-nghttp2
-          file: ./Dockerfile
+          file: ./alpine-nghttp2/Dockerfile
           load: true
           tags: ${{ env.IMAGE_NAME }}:latest
       -
