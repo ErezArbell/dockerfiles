@@ -40,7 +40,7 @@ jobs:
       -
         name: Test Image
         run: |
-          docker run ${{ env.IMAGE_NAME }}:latest bash which yq
+          docker run ${{ env.IMAGE_NAME }}:latest which yq
       -
         name: Login to DockerHub
         if: success() && github.ref == 'refs/heads/main'
