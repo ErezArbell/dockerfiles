@@ -33,10 +33,10 @@ jobs:
           file: ./myubuntu/Dockerfile
           load: true
           tags: ${{ env.IMAGE_NAME }}:latest
-      -
-        name: Inspect Image
-        run: |
-          docker buildx imagetools inspect ${{ env.IMAGE_NAME }}:latest
+          #      -
+          #        name: Inspect Image
+          #        run: |
+          #          docker buildx imagetools inspect ${{ env.IMAGE_NAME }}:latest
       -
         name: Test Image
         run: |
