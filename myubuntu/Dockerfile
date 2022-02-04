@@ -8,6 +8,6 @@ RUN apt-get update && \
   openssh-client \
   jq && rm -rf /var/lib/apt/lists/*
 
-RUN wget --no-check-certificate --quiet -O /usr/bin/yq https://github.com/mikefarah/yq/releases/download/v4.14.2/yq_linux_amd64 && chmod +x /usr/bin/yq
+RUN wget --no-check-certificate --quiet -O /usr/bin/yq https://github.com/mikefarah/yq/releases/download/v4.18.1/yq_linux_amd64 && chmod +x /usr/bin/yq
 
 ENTRYPOINT ["/bin/bash"]
