@@ -5,6 +5,8 @@ RUN apt-get update && \
   wget \
   curl \
   iputils-ping \
+  iproute2 \
+  net-tools \
   openssh-client \
   jq && rm -rf /var/lib/apt/lists/*
 
